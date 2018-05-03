@@ -28,6 +28,8 @@ initial begin
   if (out !== 1'b0) $display("Failed");
   in = 1;
   #2;
+  if (out !== 1'b0) $display("Failed"); 
+  #2;
   if (out !== 1'b1) $display("Failed");  
   $display("Done...");
 end 
